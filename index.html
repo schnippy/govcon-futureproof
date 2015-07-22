@@ -15,8 +15,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
-
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -44,7 +45,7 @@
 					<h1>Delaying the Inevitable</h1>
 					<h3>Future Proofing your Drupal 7 Site<br /></h3>
 					<p>
-						<small>Presentation by Greg Schnippel / @schnippy </small>
+						<small>Presentation by Greg Schnippel / <a href="http://www.twitter.com/schnippy">@schnippy</a></small>
 					</p>
 				</section>
 
@@ -53,6 +54,103 @@
 					<p>
 						Slides online here:<br /> 
 						<a href="https://github.com/schnippy/govcon-futureproof">https://github.com/schnippy/govcon-futureproof</a>
+					</p>
+					<aside class="notes">
+						If I had any clever comments for this slide, they would be here in the notes..  
+					</aside>
+				</section>
+
+				<section>
+					<section id="questions">
+						<h2>AM I IN THE RIGHT ROOM?</h2>
+						<div style="text-align: left">
+						<p class="fragment"><i class="fa fa-square-o"></i> What should I do now to future proof my site?</p>
+						<p class="fragment"><i class="fa fa-square-o"></i> How much time does my Drupal 7.x site have?</p>						
+						<p class="fragment"><i class="fa fa-square-o"></i> What Drupal 8.x awesomeness can I backport to 7.x now?</p>
+						<p class="fragment"><i class="fa fa-square-o"></i> Why do you hate Drupal 8.x?</p>
+						<p class="fragment"><i class="fa fa-square-o"></i> Are you going to talk about Backdrop?</p>
+						<p class="fragment"><i class="fa fa-square-o"></i> What is the best module on Drupal.org?</p>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section id="whoops">
+						<h2>What Drupal 8.x awesomeness can I backport to 7.x now?</h2>
+						<p class="fragment"><a href="https://austin2014.drupal.org/session/future-proof-your-drupal-7-site.html"><img src="images/slide1.jpg" /></a></p>
+						<aside class="notes">
+							I'll cover my recommendations later but I wanted to flag this series of presentations from Dave Reid now. 
+						</aside>
+					</section>
+				</section>
+
+				<section id="questions2">
+						<h2>AM I IN THE RIGHT ROOM?</h2>
+						<div style="text-align: left">
+						<p><i class="fa fa-square-o"></i> What should I do now to future proof my site?</p>
+						<p><i class="fa fa-square-o"></i> How much time does my Drupal 7.x site have?</p>						
+						<p><i class="fa fa-archive"></i> <span style="text-decoration: line-through;">What Drupal 8.x awesomeness can I backport to 7.x now?</span></p>
+						<p><i class="fa fa-square-o"></i> Why do you hate Drupal 8.x?</p>
+						<p><i class="fa fa-square-o"></i> Are you going to talk about Backdrop?</p>
+						<p><i class="fa fa-square-o"></i> What is the best module on Drupal.org?</p>
+						</div>
+				</section>
+				
+				<section>
+					<section id="history">
+						<h3>How much time does my Drupal 7.x site have?</h3>
+						<div style="text-align: left">
+						<p class="fragment"> May 1st, 2006: Drupal 4.7x released, last major 4.x branch</p>
+						<p class="fragment"> January 15, 2007: Drupal 5.x released (8 months later)</p>
+						<p class="fragment"> February 13, 2008: Drupal 6.x released (1 year)</p>
+						<p class="fragment"> January 5, 2011: Drupal 7.x released (~3 years)</p>
+					</section>
+					<aside class="notes">
+						May 1st, 2006: Drupal 4.7x released
+
+						January 15, 2007: Drupal 5.x released (8 months later)
+						https://www.drupal.org/drupal-5.0
+
+						February 13, 2008: Drupal 6.x released (1 year)
+						https://www.drupal.org/drupal-6.0
+
+						January 5, 2011: Drupal 7.x released (3 years)
+						https://www.drupal.org/drupal-7-released
+					</aside>
+				</section>
+								
+				<section>
+						<h3>Drupal 8.x is in "API Completion" phase</h3>
+						<blockquote cite="https://www.drupal.org/core/dev-cycle#rc" style="text-align: left; font-size: .90em; background-color: #eee; color: #000; padding: 25px;">
+							&ldquo;Contributed module and theme developers are encouraged to start porting their modules during this phase to uncover critical API issues while they can still be corrected, but should also be aware that APIs will still change as critical issues are addressed. Developers who wish to go through the upgrade process only once should wait for the first release candidate.&rdquo;<br /><a href="https://www.drupal.org/core/dev-cycle">https://www.drupal.org/core/dev-cycle</a>
+						</blockquote>
+				</section>
+				
+				<section>
+					<section>
+						<img src="images/critical-line.jpg">
+					</section>
+					<section>
+						<img src="images/critical2.jpg">					
+					</section>
+				</section>
+				
+				<section>
+						<h3>Technical debt in Drupal 8.x</h3>
+						<div style="position: relative; width: 100%;">
+							<div class="fragment" style="width: 450px; float: left; margin-right: 15px;"><img src="images/debt.jpg"><br />(August 28, 2013)</div>
+							<div class="fragment" style="width:40%; margin-left: 100px; overflow: hidden; padding: 10px; margin-top: 30px; color: #fff;">Current Status<br /><br />10,836 modules<br /> in Drupal 7.x<br /><br />808 modules<br /> in Drupal 8.x<br /><br />92%</div>
+						</div>
+				</section>
+				
+								
+				<section>
+					<h2>SPONSOR SHOUTOUTS</h2>
+					<p><ul>
+						<li>Presentation software: <a href="http://lab.hakim.se/reveal-js/#/">Reveal.js</a></li>
+						<li>Glyph Fonts: <a href="http://fontawesome.io">FontAwesome.io</a></li>
+						<li>Raptors: <a href="http://zurb.com/playground/jquery-raptorize">Raptorize: A jQuery Plugin</a></li>
+						</ul>
 					</p>
 				</section>
 
