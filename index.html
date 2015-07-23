@@ -16,7 +16,13 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+		<style>
+			fa { 
+				color: #fff;
+				font-size: 1.2em;
+			}
+		</style>
 		
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -29,6 +35,7 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<script src="js/cornify.js" /></script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -51,8 +58,8 @@
 
 				<section>
 					<h2>WELCOME</h2>
-					<p>
-						Slides online here:<br /> 
+					<p class="fragment"><img src="images/logo.png" /></p>
+					<p class="fragment">Slides online here:<br /> 
 						<a href="https://github.com/schnippy/govcon-futureproof">https://github.com/schnippy/govcon-futureproof</a>
 					</p>
 					<aside class="notes">
@@ -89,7 +96,7 @@
 						<div style="text-align: left">
 						<p><i class="fa fa-square-o"></i> What should I do now to future proof my site?</p>
 						<p><i class="fa fa-square-o"></i> How much time does my Drupal 7.x site have?</p>						
-						<p><i class="fa fa-archive"></i> <span style="text-decoration: line-through;">What Drupal 8.x awesomeness can I backport to 7.x now?</span></p>
+						<p><i class="fa fa-check-square-o"></i>&nbsp; <span style="text-decoration: line-through;"><i>What Drupal 8.x awesomeness can I backport to 7.x now?</i></span></p>
 						<p><i class="fa fa-square-o"></i> Why do you hate Drupal 8.x?</p>
 						<p><i class="fa fa-square-o"></i> Are you going to talk about Backdrop?</p>
 						<p><i class="fa fa-square-o"></i> What is the best module on Drupal.org?</p>
@@ -100,10 +107,10 @@
 					<section id="history">
 						<h3>How much time does my Drupal 7.x site have?</h3>
 						<div style="text-align: left">
-						<p class="fragment"> May 1st, 2006: Drupal 4.7x released, last major 4.x branch</p>
-						<p class="fragment"> January 15, 2007: Drupal 5.x released (8 months later)</p>
-						<p class="fragment"> February 13, 2008: Drupal 6.x released (1 year)</p>
-						<p class="fragment"> January 5, 2011: Drupal 7.x released (~3 years)</p>
+						<p class="fragment"><i class="fa fa-clock-o"></i> May 1st, 2006: Drupal 4.7x released, last major 4.x branch</p>
+						<p class="fragment"><i class="fa fa-clock-o"></i> January 15, 2007: Drupal 5.x released (8 months later)</p>
+						<p class="fragment"><i class="fa fa-clock-o"></i> February 13, 2008: Drupal 6.x released (1 year)</p>
+						<p class="fragment"><i class="fa fa-clock-o"></i> January 5, 2011: Drupal 7.x released (~3 years)</p>
 					</section>
 					<aside class="notes">
 						May 1st, 2006: Drupal 4.7x released
@@ -126,7 +133,7 @@
 						</blockquote>
 				</section>
 				
-				<section>
+				<section id="graphsminuscontext">
 					<section>
 						<img src="images/critical-line.jpg">
 					</section>
@@ -135,14 +142,152 @@
 					</section>
 				</section>
 				
-				<section>
+				<section id="debt">
 						<h3>Technical debt in Drupal 8.x</h3>
 						<div style="position: relative; width: 100%;">
 							<div class="fragment" style="width: 450px; float: left; margin-right: 15px;"><img src="images/debt.jpg"><br />(August 28, 2013)</div>
 							<div class="fragment" style="width:40%; margin-left: 100px; overflow: hidden; padding: 10px; margin-top: 30px; color: #fff;">Current Status<br /><br />10,836 modules<br /> in Drupal 7.x<br /><br />808 modules<br /> in Drupal 8.x<br /><br />92%</div>
 						</div>
 				</section>
-				
+
+				<section id="thisthingagain">
+					<section>
+						<a href="#" onclick="cornify_add();return false;"><img src="images/konami.png"></a>
+					</section>				
+					<section>
+						<a href="#" onclick="cornify_add();return false;"><img src="images/needscorns.jpg"></a>
+					</section>				
+				</section>			
+
+				<section id="questions3">
+						<h2>AM I IN THE RIGHT ROOM?</h2>
+						<div style="text-align: left">
+						<p><i class="fa fa-square-o"></i> What should I do now to future proof my site?</p>
+						<p><i class="fa fa-square-o"></i> How much time does my Drupal 7.x site have?</p>						
+						<p><i class="fa fa-check-square-o"></i> &nbsp;<span style="text-decoration: line-through;"><i>What Drupal 8.x awesomeness can I backport to 7.x now?</i></span></p>
+						<p><i class="fa fa-square-o"></i> Why do you hate Drupal 8.x?</p>
+						<p><i class="fa fa-square-o"></i> Are you going to talk about Backdrop?</p>
+						<p><i class="fa fa-check-square-o"> &nbsp;</i><span style="text-decoration: line-through;"><i>What is the best module on Drupal.org?</i></span></p>
+						</div>
+				</section>
+							
+				<section id="iheartcharts">
+					<h3>ENOUGH ALREADY WITH THE CHARTS HOW MUCH TIME DO I HAVE</h3>
+					<section>
+						<div class="fragment">	
+						<img src="images/time.jpg">
+						</div>
+					</section>
+					<section>
+						<img src="images/time2.jpg"><br />
+						<h3>Drupal 6x/7x Adoption Rates</h3>
+						<aside class="notes">
+							Webchick.net, An analysis of Drupal major version adoption)
+						</aside>
+					</section>
+					<section>
+						<img src="images/thefuture.jpg">					
+						<aside class="notes">
+							Man riding a segway while wearing Google Glass and checking his iPhone. This is the future, prepare yourself. 
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section id="complications">
+						<h3>MAKE THIS MORE COMPLICATED</h3><br />
+						<div style="text-align: left">
+						<p class="fragment"><i class="fa fa-exclamation-circle"></i>  Time during which contrib developers will continue pushing 7.x module updates</p>
+						<p class="fragment"><i class="fa fa-exclamation-circle"></i>  Time before Drupal 9.x when 7.x will enter into maintenance-only releases</p>
+						<p class="fragment"><i class="fa fa-exclamation-circle"></i>  Time before that new module your boss wants gets released 8.x only</p>
+					</section>
+						<aside class="notes">
+							If you waited until Drupal 8.x was launched to upgrade your 6.x site, you would have had 7 years of site before the maintenance freeze.
+						</aside>					
+				</section>
+
+				<section id="questions4">
+						<h2>AM I IN THE RIGHT ROOM?</h2>
+						<div style="text-align: left">
+						<p><i class="fa fa-square-o"></i> What should I do now to future proof my site?</p>
+						<p><i class="fa fa-check-square-o"></i> &nbsp;<span style="text-decoration: line-through;"><i>How much time does my Drupal 7.x site have?</i></p>						
+						<p><i class="fa fa-check-square-o"></i> &nbsp;<span style="text-decoration: line-through;"><i>What Drupal 8.x awesomeness can I backport to 7.x now?</i></span></p>
+						<p><i class="fa fa-square-o"></i> Why do you hate Drupal 8.x?</p>
+						<p><i class="fa fa-square-o"></i> Are you going to talk about Backdrop?</p>
+						<p><i class="fa fa-check-square-o"></i> &nbsp;<span style="text-decoration: line-through;">What is the best module on Drupal.org?</span></p>
+						</div>
+				</section>
+
+				<section>
+						<h2>[ C E N S O R E D ]</h2>
+						<a href="https://backdropcms.org/"><img src="images/backdrop.jpg"></a>
+						<aside class="notes">
+							Left path begins at https://backdropcms.org 
+						</aside>
+				</section>
+
+				<section id="questions5">
+						<h2>AM I IN THE RIGHT ROOM?</h2>
+						<div style="text-align: left">
+						<p><i class="fa fa-square-o"></i> What should I do now to future proof my site?</p>
+						<p><i class="fa fa-check-square-o"></i> &nbsp;<span style="text-decoration: line-through;"><i>How much time does my Drupal 7.x site have?</i></p>						
+						<p><i class="fa fa-check-square-o"></i> &nbsp;<span style="text-decoration: line-through;"><i>What Drupal 8.x awesomeness can I backport to 7.x now?</i></span></p>
+						<p><i class="fa fa-square-o"></i> Why do you hate Drupal 8.x?</p>
+						<p><i class="fa fa-check-square-o"></i> &nbsp;<span style="text-decoration: line-through;"><i>Are you going to talk about Backdrop?</i></span></p>
+						<p><i class="fa fa-check-square-o"></i> &nbsp;<span style="text-decoration: line-through;">What is the best module on Drupal.org?</span></p>
+						</div>
+				</section>
+
+
+				<section id="showsomelove">
+						<h2>Why do you hate Drupal 8.x?</h2>
+						<a href="#" onclick="cornify_add();return false;"><img src="images/drupal8.png"></a>
+				</section>
+
+				<section id="questions6">
+						<h2>AM I IN THE RIGHT ROOM?</h2>
+						<div style="text-align: left">
+						<p><i class="fa fa-square-o"></i> What should I do now to future proof my site?</p>
+						<p><i class="fa fa-check-square-o"></i> &nbsp;<span style="text-decoration: line-through;"><i>How much time does my Drupal 7.x site have?</i></p>						
+						<p><i class="fa fa-check-square-o"></i> &nbsp;<span style="text-decoration: line-through;"><i>What Drupal 8.x awesomeness can I backport to 7.x now?</i></span></p>
+						<p><i class="fa fa-check-square-o"></i> &nbsp;<span style="text-decoration: line-through;"><i>Why do you hate Drupal 8.x?</i></p>
+						<p><i class="fa fa-check-square-o"></i> &nbsp;<span style="text-decoration: line-through;"><i>Are you going to talk about Backdrop?</i></span></p>
+						<p><i class="fa fa-check-square-o"></i> &nbsp;<span style="text-decoration: line-through;">What is the best module on Drupal.org?</span></p>
+						</div>
+				</section>
+
+				<section>
+					<section id="strategy">
+						<h3>WHAT SHOULD I DO NOW TO FUTURE PROOF MY SITE?</h3>
+						<div style="text-align: left">
+						<p class="fragment"><i class="fa fa-key"></i>  Audit your existing modules, know what you depend on</p>
+						<p class="fragment"><i class="fa fa-key"></i>  Track modules to watch for conflicts</p>
+						<p class="fragment"><i class="fa fa-key"></i>  Upgrade existing modules</p>
+					</section>				
+				</section>
+
+				<section id="iheartcharts">
+					<h3>AUDITING YOUR SITE MODULES</h3>
+					<section>
+						<div class="fragment">	
+						<img src="images/bluespark.jpg"><br />
+						(Status of the Top 100 Contributed Modules for Drupal 8)
+						</div>
+					</section>
+					<section>
+						<img src="images/time2.jpg"><br />
+						<h3>Drupal 6x/7x Adoption Rates</h3>
+						<aside class="notes">
+							Webchick.net, An analysis of Drupal major version adoption)
+						</aside>
+					</section>
+					<section>
+						<img src="images/thefuture.jpg">					
+						<aside class="notes">
+							Man riding a segway while wearing Google Glass and checking his iPhone. This is the future, prepare yourself. 
+						</aside>
+					</section>
+				</section>
 								
 				<section>
 					<h2>SPONSOR SHOUTOUTS</h2>
